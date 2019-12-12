@@ -1,5 +1,5 @@
 const express = require("express");
-const userService = require("./user.service");
+const userService = require("../Service/user.service");
 
 exports.authenticate = function(req, res, next) {
   userService
