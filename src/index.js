@@ -14,10 +14,9 @@ app.use(cors());
 app.use(jwt());
 
 // api routes
-const product = require("./routes/product.route"); // Imports routes for the products
-app.use("/products", product);
 
-//app.use('/users', require('./users/users.controller'));
+app.use("/products", require("../src/routes/product.route"));
+app.use('/users', require('../src/routes/user.route'));
 
 // global error handler
 app.use(errorHandler);

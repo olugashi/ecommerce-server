@@ -1,7 +1,6 @@
 {
-  "name": "node-server",
+  "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js localhost 8080"
@@ -20,5 +19,16 @@
   "devDependencies": {
     "nodemon": "1.18.4"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olugashi/ecommerce-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olugashi/ecommerce-server/issues"
+  },
+  "homepage": "https://github.com/olugashi/ecommerce-server#readme",
+  "description": ""
 }
