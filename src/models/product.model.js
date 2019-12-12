@@ -6,5 +6,7 @@ let ProductSchema = new Schema({
   price: { type: Number, required: true }
 });
 
+ProductSchema.set("toJSON", { virtuals: true });
+
 // Export the model
 module.exports = mongoose.model("Product", ProductSchema);

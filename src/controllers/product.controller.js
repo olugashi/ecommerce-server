@@ -1,13 +1,13 @@
 const Product = require("../models/product.model");
 
 //Simple version, without validation or sanitation
-exports.product_details = function(req, res) {
+exports.product_details = function(req, res, next) {
   Product.findById(req.params.id, function(err, product) {
     res.send(product);
   });
 };
 
-exports.product_create = function(req, res) {
+exports.product_create = function(req, res, next) {
   let product = new Product({
     name: req.body.name,
     price: req.body.price
@@ -18,7 +18,7 @@ exports.product_create = function(req, res) {
   });
 };
 
-exports.product_update = function(req, res) {
+exports.product_update = function(req, res, next) {
   Product.findByIdAndUpdate(req.params.id, { $set: req.body }, function(
     err,
     product
@@ -27,7 +27,7 @@ exports.product_update = function(req, res) {
   });
 };
 
-exports.product_delete = function(req, res) {
+exports.product_delete = function(req, res, next) {
   Product.findByIdAndRemove(req.params.id, function(err) {
     res.send("Deleted successfully!");
   });
