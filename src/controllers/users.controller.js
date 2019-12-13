@@ -15,11 +15,12 @@ exports.authenticate = function(req, res, next) {
 exports.register = function(req, res, next) {
   userService
     .create(req.body)
-    .then(() => res.json({}))
+    .then(() => res.send("User register successfully"))
     .catch(err => next(err));
 };
 
 exports.getAll = function(req, res, next) {
+  console.log("get All ");
   userService
     .getAll()
     .then(users => res.json(users))
