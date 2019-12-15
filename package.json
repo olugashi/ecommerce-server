@@ -14,6 +14,7 @@
     "express": "4.17.1",
     "express-jwt": "5.3.1",
     "jsonwebtoken": "8.5.1",
+    "mongodb": "3.4.0",
     "mongoose": "5.8.0",
     "rootpath": "0.1.2"
   },
@@ -25,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/olugashi/ecommerce-server.git"
   },
-  "author": "",
+  "author": "Lugashi Oren",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/olugashi/ecommerce-server/issues"
