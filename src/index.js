@@ -18,10 +18,13 @@ app.use(jwt());
 app.use("/products", require("../src/routes/product.route"));
 app.use("/users", require("../src/routes/user.route"));
 
+app.get("/", function(req, res) {
+  res.send("Hello World");
+});
 // global error handler
 app.use(errorHandler);
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 33000;
 
 app.listen(port, () => {
   console.log("Server is up and running on port numner " + port);
