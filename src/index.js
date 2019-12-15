@@ -24,7 +24,7 @@ app.get("/", function(req, res) {
 // global error handler
 app.use(errorHandler);
 
-let port = process.env.PORT || 33000;
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server is up and running on port numner " + port);
