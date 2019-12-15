@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 3000"
+    "start": "nodemon src/index.js localhost 3000",
+    "test": "nodemon src/index.js localhost 3000 test --passWithNoTests"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
