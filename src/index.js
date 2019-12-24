@@ -19,7 +19,7 @@ app.use("/products", require("../src/routes/product.route"));
 app.use("/users", require("../src/routes/user.route"));
 
 app.get("/", function(req, res) {
-  res.send("Hello World");
+  res.send("Hello World oren");
 });
 // global error handler
 app.use(errorHandler);
